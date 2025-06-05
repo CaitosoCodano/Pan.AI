@@ -1,4 +1,4 @@
-# 🤖 Chat AI - Sistema de Conversação Inteligente
+# 🤖 Pan.AI - Sistema de Conversação Inteligente
 
 Um sistema de chat com IA que permite conversas naturais e treinamento personalizado.
 
