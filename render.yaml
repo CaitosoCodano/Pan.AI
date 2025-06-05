@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pan-ai
+    env: node
+    plan: free
+    buildCommand: cd Site/server && npm install
+    startCommand: cd Site/server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000

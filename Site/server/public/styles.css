@@ -47,7 +47,7 @@ h1 {
 .user {
   background: linear-gradient(135deg, #af9711, #3b633d);
   color: white;
-  align-self: flex-end;
+  align-self: flex-end; 
   border-bottom-right-radius: 0;
   animation: pulseUser 2s infinite;
 }

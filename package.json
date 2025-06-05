@@ -1,0 +1,26 @@
+{
+  "name": "pan-ai",
+  "version": "1.0.0",
+  "description": "🤖 Pan.AI - Sistema de Chat com IA usando Express.js e Google AI",
+  "main": "Site/server/index.js",
+  "scripts": {
+    "start": "cd Site/server && npm start",
+    "dev": "cd Site/server && npm run dev",
+    "install-server": "cd Site/server && npm install",
+    "build": "cd Site/server && npm install",
+    "postinstall": "cd Site/server && npm install"
+  },
+  "keywords": ["chat", "ai", "express", "nodejs", "google-ai"],
+  "author": "CaitosoCodano",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "groq-sdk": "^0.23.0",
+    "openai": "^5.1.0"
+  }
+}
