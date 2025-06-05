@@ -1,0 +1,140 @@
+/* Estilo geral do corpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1000px; /* largura aumentada */
+  margin: 40px auto;
+  background-color: #222221;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  padding: 0 20px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Área do chat */
+#chat {
+  flex: 1;
+  background: #0c000021;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgb(206, 199, 170);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.4s ease;
+}
+
+/* Estilo das mensagens */
+.mensagem {
+  max-width: 80%;
+  padding: 14px 20px;
+  border-radius: 20px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.4s ease;
+}
+
+/* Mensagem do usuário */
+.user {
+  background: linear-gradient(135deg, #af9711, #3b633d);
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+  animation: pulseUser 2s infinite;
+}
+
+/* Mensagem do bot */
+.bot {
+  background: linear-gradient(135deg, #990e0e, #ffffff);
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+  animation: pulseBot 2s infinite;
+}
+
+/* Formulário: input e botão lado a lado */
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Campo de entrada */
+#inputPergunta {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#inputPergunta:focus {
+  border-color: #4a90e2;
+}
+
+/* Botão de envio */
+#btnEnviar {
+  background-color: #4ae263;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 140px;
+}
+
+#btnEnviar:hover {
+  background-color: #357ABD;
+  transform: scale(1.05);
+}
+
+/* Código e blocos de código */
+pre {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+/* Animações */
+@keyframes pulseUser {
+  0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4); }
+  70% { box-shadow: 0 0 0 12px rgba(76, 175, 80, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+}
+
+@keyframes pulseBot {
+  0% { box-shadow: 0 0 0 0 rgba(160, 160, 160, 0.3); }
+  70% { box-shadow: 0 0 0 10px rgba(160, 160, 160, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(160, 160, 160, 0); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
